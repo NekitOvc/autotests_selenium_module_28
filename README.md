@@ -12,4 +12,11 @@
 4. Оформить описание обнаруженных багов.
 
 test_registration_website.py - автотесты страницы регистрации
+
 test_authorization_website.py - автотесты страницы авторизации
+_________________________________________________________________
+python -m pytest -v --driver Chrome --driver-path chromedriver.exe test_registration_website.py - команда для запуска тестов страницы регистрации
+
+python -m pytest -v --driver Chrome --driver-path chromedriver.exe test_authorization_website.py - команда для запуска тестов страницы авторизации
+
+Тесты написаны с помощью WebDriver. Всего в проекте 24 кейса. Каждый тест сохраняет скриншот в папку проекта. Для запуска тестов требуется предварительная установка библиотек pytest selenium, а также скачивание драйвера, совместимого с браузером. Скачать можно по ссылке: https://chromedriver.chromium.org/downloads
